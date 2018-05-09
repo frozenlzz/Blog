@@ -1,0 +1,31 @@
+<%- include('./shares/header') %>
+<style>
+   #page-wrapper{
+       position:relative;
+   }
+   #page-wrapper h1{
+       position:absolute;
+       left:50px;
+       top:10px;
+       color:#EEEE00;
+       letter-spacing:3px;
+   }
+   .img {
+       height:595px;
+       overflow:hidden;
+   }
+</style>
+</head>
+<body>
+    <div id="wrapper">
+        <%- include('./shares/menu') %>
+        <div id="page-wrapper" class="clearfix">
+            <h1>欢迎来到博客后台！</h1>
+            <div class="img">
+                <img src="/administrator/images/timg.jpg" style="width:100%;height:auto;" alt="科比">
+            </div>
+        </div>
+    </div>
+    <!-- /#wrapper -->
+</body>
+<%- include('./shares/footer') %>

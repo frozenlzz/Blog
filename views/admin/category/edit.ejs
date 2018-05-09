@@ -1,0 +1,37 @@
+<%- include('../shares/header') %>
+    <style>
+        table,
+        td {
+            border-collapse: collapse;
+        }
+
+        td {
+            padding: 10px;
+        }
+    </style>
+    </head>
+
+    <body>
+        <div id="wrapper">
+            <%- include('../shares/menu') %>
+                <div id="page-wrapper" class="clearfix">
+                    <h1 style="text-align:center;">分类添加</h1>
+                    <div class="col-md-6 col-md-offset-3">
+                        <form action="/category/<%= category._id %>/update" method="post" enctype="multipart/form-data" class="form-horizontal">
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">分类名称</label>
+                                <input type="text" class="form-control" id="exampleInputEmail1" placeholder="请输入分类名称" name="name">
+                            </div>
+                            <button  class="btn btn-default">添加</button>
+                        </form>
+                    </div>
+                </div>
+        </div>
+        <!-- /#wrapper -->
+    </body>
+    <%- include('../shares/footer') %>
+    <script>
+
+
+    </script>
+</html>
